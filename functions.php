@@ -69,6 +69,11 @@ if( ! defined( 'HORSECLUB_DIR_PATH_WIDGET' ) ) {
 	define( 'HORSECLUB_DIR_PATH_WIDGET', HORSECLUB_DIR_PATH_INC.'widgets/' );
 }
 
+//Companion Folder Directory
+if( ! defined( 'HORSECLUB_DIR_PATH_COMPANION' ) ) {
+	define( 'HORSECLUB_DIR_PATH_COMPANION', HORSECLUB_DIR_PATH_INC .'horseclub-companion/' );
+}
+
 
 /**
  * Include File
@@ -88,6 +93,7 @@ require_once( HORSECLUB_DIR_PATH_CLASSES . 'Class-Enqueue.php' );
 require_once( HORSECLUB_DIR_PATH_CLASSES . 'Class-Config.php' );
 require_once( HORSECLUB_DIR_PATH_HOOKS . 'hooks.php' );
 require_once( HORSECLUB_DIR_PATH_HOOKS . 'hooks-functions.php' );
+require_once( HORSECLUB_DIR_PATH_COMPANION . 'horseclub-companion.php' );
 require_once( HORSECLUB_DIR_PATH_INC . 'class-epsilon-dashboard-autoloader.php' );
 require_once( HORSECLUB_DIR_PATH_INC . 'class-epsilon-init-dashboard.php' );
 
