@@ -46,6 +46,15 @@ Epsilon_Customizer::add_field(
 /***********************************
  * Header Section Fields
  ***********************************/
+Epsilon_Customizer::add_field(
+    'horseclub_reverse_email_position',
+    array(
+        'type'        => 'epsilon-toggle',
+        'label'       => esc_html__( 'Reverse Email & Phone Position', 'horseclub' ),
+        'section'     => 'horseclub_headertop_options_section',
+        'sanitize_callback' => 'sanitize_text_field'
+    )
+);
 // Header top left text
 Epsilon_Customizer::add_field(
     'horseclub_header_left_text',
