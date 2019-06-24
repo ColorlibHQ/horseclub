@@ -75,6 +75,14 @@ if( ! defined( 'HORSECLUB_DIR_PATH_COMPANION' ) ) {
 }
 
 
+// Admin Enqueue script
+function horseclub_admin_script(){
+    wp_enqueue_style( 'horseclub-admin', get_template_directory_uri().'/assets/css/horseclub_admin.css', false, '1.0.0' );
+    wp_enqueue_script( 'horseclub_admin', get_template_directory_uri().'/assets/js/horseclub_admin.js', false, '1.0.0' );
+}
+add_action( 'admin_enqueue_scripts', 'horseclub_admin_script' );
+
+
 /**
  * Include File
  *
