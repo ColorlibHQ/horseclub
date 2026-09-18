@@ -18,10 +18,10 @@ if( ! defined( 'ABSPATH' ) ) {
 
 
 // Theme Main Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_themecolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Theme Main Color.', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_general_options_section',
@@ -31,7 +31,7 @@ Epsilon_Customizer::add_field(
 // Google map api key field
 $url = 'https://developers.google.com/maps/documentation/geocoding/get-api-key';
 
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_map_apikey',
     array(
         'type'              => 'text',
@@ -46,17 +46,17 @@ Epsilon_Customizer::add_field(
 /***********************************
  * Header Section Fields
  ***********************************/
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_reverse_email_position',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Reverse Email & Phone Position', 'horseclub' ),
         'section'     => 'horseclub_headertop_options_section',
         'sanitize_callback' => 'sanitize_text_field'
     )
 );
 // Header top left text
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_header_left_text',
     array(
         'type'        => 'text',
@@ -67,7 +67,7 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header top left text
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_header_phone',
     array(
         'type'        => 'text',
@@ -78,10 +78,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header Nav Bar Background Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_header_lefttext',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Top Left Text Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_headertop_options_section',
@@ -89,10 +89,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header Nav Bar Background Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_header_phone_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Top Phone Number Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_headertop_options_section',
@@ -100,10 +100,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header Nav Bar Background Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_header_navbar_bgColor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Nav Bar Background Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_headertop_options_section',
@@ -111,10 +111,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header Sticky  Nav Bar Background Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_header_navbarsticky_bgColor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Sticky Nav Bar Background Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_headertop_options_section',
@@ -122,10 +122,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header Nav Bar Menu Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_header_navbar_menuColor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Nav Bar Menu Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_headertop_options_section',
@@ -133,10 +133,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header Nav Bar Menu Hover Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_header_navbar_menuHovColor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Nav Bar Menu Hover Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_headertop_options_section',
@@ -144,10 +144,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header sticky nav bar menu color picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_header_sticky_navbar_menuColor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Sticky Header Nav Bar Menu Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_headertop_options_section',
@@ -155,10 +155,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header sticky nav bar menu hover color picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_header_sticky_navbar_menuHovColor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Sticky Header Nav Bar Menu Hover Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_headertop_options_section',
@@ -166,10 +166,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Page Header Background Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_headerbgcolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Background Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'colors',
@@ -177,10 +177,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Page Header text Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_headertextcolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Text Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'colors',
@@ -188,20 +188,20 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header overlay switch field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub-headeroverlay-toggle-settings',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Toggle header overlay', 'horseclub' ),
         'section'     => 'colors',
         'sanitize_callback' => 'sanitize_text_field'
     )
 );
 // Header overlay color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_headeroverlaycolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Overlay Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'colors',
@@ -215,7 +215,7 @@ Epsilon_Customizer::add_field(
 
 
 // Post excerpt length field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_post_excerpt',
     array(
         'type'        => 'text',
@@ -227,17 +227,17 @@ Epsilon_Customizer::add_field(
     )
 );
 // Blog sidebar layout field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub-blog-sidebar-settings',
     array(
-        'type'     => 'epsilon-layouts',
+        'type'     => 'colorlib-layouts',
         'label'    => esc_html__( 'Blog Layout', 'horseclub' ),
         'section'  => 'horseclub_blog_options_section',
         'description' => esc_html__( 'Select the option to set blog page sidebar position.', 'horseclub' ),
         'layouts'  => array(
-            '1' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/one-column.png',
-            '2' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/epsilon-section-titleright.jpg',
-            '3' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/epsilon-section-titleleft.jpg',
+            '1' => get_template_directory_uri() . '/inc/customizer/colorlib-customizer/assets/img/layout-one-column.svg',
+            '2' => get_template_directory_uri() . '/inc/customizer/colorlib-customizer/assets/img/layout-sidebar-right.svg',
+            '3' => get_template_directory_uri() . '/inc/customizer/colorlib-customizer/assets/img/layout-sidebar-left.svg',
         ),
         'default'  => array(
             'columnsCount' => 1,
@@ -259,10 +259,10 @@ Epsilon_Customizer::add_field(
 );
 if( defined( 'HORSECLUB_COMPANION_VERSION' ) ) {
 // Header social switch field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub-blog-social-share-toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog Social Share Show/Hide', 'horseclub' ),
         'section'     => 'horseclub_blog_options_section',
         'sanitize_callback' => 'sanitize_text_field'
@@ -270,10 +270,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header social switch field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub-blog-like-toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog Like Button Show/Hide', 'horseclub' ),
         'section'     => 'horseclub_blog_options_section',
         'sanitize_callback' => 'sanitize_text_field'
@@ -285,7 +285,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // 404 text #1 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_fof_text_one',
     array(
         'type'              => 'text',
@@ -296,7 +296,7 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_fof_text_two',
     array(
         'type'              => 'text',
@@ -307,10 +307,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #1 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_fof_textonecolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #1 Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_fof_options_section',
@@ -318,10 +318,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_fof_texttwocolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #2 Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_fof_options_section',
@@ -329,10 +329,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_fof_bgcolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Page Background Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_fof_options_section',
@@ -345,10 +345,10 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // Footer widget toggle field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub-widget-toggle-settings',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Footer widget show/hide', 'horseclub' ),
         'description' => esc_html__( 'Toggle to display footer widgets.', 'horseclub' ),
         'section'     => 'horseclub_footer_options_section',
@@ -362,20 +362,20 @@ Epsilon_Customizer::add_field(
 $url = 'https://colorlib.com/';
 $copyText = sprintf( __( 'Theme by %s colorlib %s. Copyright &copy; %s  |  All rights reserved', 'horseclub' ), '<a target="_blank" href="' . esc_url( $url ) . '">', '</a>', date( 'Y' ) );
 
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub-copyright-text-settings',
     array(
-        'type'        => 'epsilon-text-editor',
+        'type'        => 'colorlib-text-editor',
         'label'       => esc_html__( 'Footer copyright text', 'horseclub' ),
         'section'     => 'horseclub_footer_options_section',
         'default'     => wp_kses_post( $copyText ),
     )
 );
 // Footer widget background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_footer_bgColor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Background Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_footer_options_section',
@@ -383,10 +383,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Footer widget text color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_footer_color_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Text Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_footer_options_section',
@@ -394,10 +394,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Footer widget title color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_footer_widgettitlecolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Widgets Title Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_footer_options_section',
@@ -405,10 +405,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Footer widget anchor color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_footer_anchorcolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_footer_options_section',
@@ -416,10 +416,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Footer widget anchor hover Color 
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'horseclub_footer_anchorhovcolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Hover Color', 'horseclub' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'horseclub_footer_options_section',
