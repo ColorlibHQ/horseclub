@@ -81,7 +81,7 @@ function horseclub_booking_lists() {
 
 
     if( $uname ) {
-        echo '<li style="padding: 8px;background-color:#f8f8f8;">'.esc_html( $uname ).'<span style="margin-left: 30px;">'.esc_html( $udate ).'</span><span style="float:right;"><button class="view-booking" data-target="modal-'.esc_attr( $list->ID ).'" >'.esc_html__( 'View', 'horseclub' ).'</button></span>'.horseclub_booking_admin_modal( $list->ID ).'</li>';
+        echo '<li style="padding: 8px;background-color:#f8f8f8;">'.esc_html( $uname ).'<span style="margin-left: 30px;">'.esc_html( $udate ).'</span><span style="float:right;"><button class="view-booking" data-bs-target="modal-'.esc_attr( $list->ID ).'" >'.esc_html__( 'View', 'horseclub' ).'</button></span>'.horseclub_booking_admin_modal( $list->ID ).'</li>';
     }
         
     }
@@ -93,7 +93,7 @@ function horseclub_booking_lists() {
 
             $( '.view-booking' ).on( 'click', function() {
 
-                var modal = $(this).attr( 'data-target' );
+                var modal = $(this).attr( 'data-bs-target' );
 
                 $('.' + modal ).show();
 
