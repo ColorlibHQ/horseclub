@@ -176,7 +176,7 @@ final class Horseclub {
 					'handler'		=> 'horseclub-theme-horseclub-main',
 					'file' 			=> $cssPath.'main.css',
 					'dependency' 	=> array(),
-					'version' 		=> $this->horseclub_version,
+					'version' 		=> $this->horseclub_version . '-s3',
 				),
 				array(
 					'handler'		=> 'horseclub-theme-horseclub-style',
