@@ -193,13 +193,6 @@ final class Horseclub {
 					'in_footer' 	=> true
 				),
 				array(
-					'handler'		=> 'horseclub-theme-jquery-nice-select',
-					'file' 			=> $jsPath.'jquery.nice-select.min.js',
-					'dependency' 	=> array( 'jquery' ),
-					'version' 		=> '1.0',
-					'in_footer' 	=> true
-				),
-				array(
 					'handler'		=> 'horseclub-theme-jquery-sticky',
 					'file' 			=> $jsPath.'jquery.sticky.js',
 					'dependency' 	=> array( 'jquery' ),
@@ -214,10 +207,17 @@ final class Horseclub {
 					'in_footer' 	=> true
 				),
 				array(
+					'handler'		=> 'horseclub-ui-js',
+					'file' 			=> $jsPath.'colorlib-ui.js',
+					'dependency' 	=> array(),
+					'version' 		=> '2.1.1',
+					'in_footer' 	=> true
+				),
+				array(
 					'handler'		=> 'horseclub-theme-horseclub-main',
 					'file' 			=> $jsPath.'main.js',
-					'dependency' 	=> array( 'jquery', 'imagesloaded' ),
-					'version' 		=> $this->horseclub_version,
+					'dependency' 	=> array( 'jquery', 'imagesloaded', 'horseclub-ui-js' ),
+					'version' 		=> $this->horseclub_version . '-s1',
 					'in_footer' 	=> true
 				),
 			)
