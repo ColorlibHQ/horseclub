@@ -294,24 +294,17 @@ if ( !class_exists( 'Horseclub_El_Widgets' ) ) {
             // googleapis js
             wp_register_script( 'maps-googleapis', '//maps.googleapis.com/maps/api/js?key='.esc_attr( $apiKey ) );
 
-            // ajaxchimp js
-            wp_enqueue_script( 'jquery-ajaxchimp', HORSECLUB_COMPANION_EL_URL . 'assets/js/jquery.ajaxchimp.min.js', array('jquery'), '1.0', true );
-
-            // jquery waypoints js
-            wp_enqueue_script( 'jquery-magnific-popup', HORSECLUB_COMPANION_EL_URL . 'assets/js/jquery.magnific-popup.min.js', array('jquery'), '1.0', true );
 
 
 
-            // owl carousel js
-            wp_enqueue_script( 'owl-carousel', HORSECLUB_COMPANION_EL_URL . 'assets/js/owl.carousel.min.js', array('jquery'), '1.0', true );
+
 
             // horseclub map custom js
-            wp_register_script( 'horseclub-map-custom', HORSECLUB_COMPANION_EL_URL . 'assets/js/map-custom.js', array('jquery'), '1.0', true );
+            wp_register_script( 'horseclub-map-custom', HORSECLUB_COMPANION_EL_URL . 'assets/js/map-custom.js', array(), '1.0-s2', true );
 
-            wp_enqueue_script( 'justifiedGallery', HORSECLUB_COMPANION_EL_URL . 'assets/js/jquery.justifiedGallery.min.js', array('jquery'), '1.0', true );
 
             // horseclub companion main js
-            wp_enqueue_script( 'horseclub', HORSECLUB_COMPANION_EL_URL . 'assets/js/horseclub-companion-main.js', array( 'jquery', 'horseclub-ui-js', 'jquery-ui-datepicker' ), '1.0-s1', true);
+            wp_enqueue_script( 'horseclub', HORSECLUB_COMPANION_EL_URL . 'assets/js/horseclub-companion-main.js', array( 'horseclub-ui-js' ), '1.0-s2', true);
            
         }
 
